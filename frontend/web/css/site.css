@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+
+html,
+body {
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: "\e151";
+}
+
+a.desc:after {
+    content: "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view td {
+    white-space: nowrap;
+}
+
+.grid-view .filters input,
+.grid-view .filters select {
+    min-width: 50px;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+
+.form-group.has-error .form-control, .form-group.has-error .input-group-addon {
+    border-color: #fe5461;
+    box-shadow: none;
+}
+
+.form-group.has-success .form-control, .form-group.has-success .input-group-addon {
+    border-color: #29cc97;
+    box-shadow: none;
+}
+
+
+.help-block, .help-block-error {
+    width: 100%;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    font-size: 85% !important;
+    color: #fe5461;  
+}
+
+.form-group, .input-group {
+    margin-bottom: 0em !important;
+}
+
+
+/* Krajee */
+.select2-container--krajee-bs4 .select2-selection--single .select2-selection__rendered {
+    color: #555555;
+    padding: 4px;
+}
+
+.select2-container--krajee-bs4 .select2-selection--single {
+    height: calc(2.25rem + 5px) !important;
+}
+
+.has-success.select2-container--krajee-bs4 .select2-dropdown, .has-success .select2-container--krajee-bs4 .select2-selection {
+    border-color: #29cc97;
+}
+
+/***.Krajee**/
+
+.table th {
+    font-weight: 300;
+    font-size: 11pt;
+    font-family: "Roboto", sans-serif !important;
+}
+
+#regulatory-ordinance > tbody > tr > td:first-child {
+    font-weight: bold;
+}
+
+table > tbody > tr > td {
+    font-size: 11pt;
+}
+
+.card-title-header  {
+    width: 50%;
+    display: inline-block;
+}
+
+#regulatoryordinance-policy_opt_id label , #regulatoryissuance-policy_opt_id label {
+    margin-right: 1em;
+}
+
+.individual-agency {
+    width: 100%;
+}
+
+.regulatory-reform-tech-report td {
+    color: #000;
+}
+
+.table-header {
+    background-color: #bdc3c7; 
+    font-size: 13pt;
+}
+
+.table-label {
+    background-color: #EEEEEE; 
+    font-size: 11pt; 
+    font-weight: bold !important;
+}
+
+.table-desc {
+    color: #757575 !important;
+}
+
+.regulatory-map tbody tr td {
+    color: #000 !important;
+}
+
+.ellipsis-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 550px;
+}
+
+
+.openBtn {
+    background: #f1f1f1;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+  
+.openBtn:hover {
+    background: #bbb;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+}
+
+.overlay-content {
+    position: relative;
+    top: 46%;
+    width: 80%;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    cursor: pointer;
+    color: white;
+}
+
+.overlay .closebtn:hover {
+    color: #ccc;
+}
+
+.overlay input[type=text] {
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+    float: left;
+    width: 80%;
+    background: white;
+}
+
+.overlay input[type=text]:hover {
+    background: #f1f1f1;
+}
+
+.overlay button {
+    float: left;
+    width: 20%;
+    padding: 15px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.overlay button:hover {
+    background: #bbb;
+}
+
+#drop_file_zone {
+    background-color: #EEE; 
+    border: rgb(21, 85, 206) 2px dashed;
+    height: 200px;
+    padding: 8px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+#drag_upload_file {
+    width:50%;
+    margin: auto;
+    
+}
+
+#drag_upload_file p {
+    text-align: center;
+}
+
+#drag_upload_file #selectfile {
+    display: none;
+}
+
+.modal-container-sm {
+    width: 20%;
+}
+
+.nav-text {
+    padding-left: 5px;
+}
+
+table th {
+    font-weight: 700 !important;
+}
+
+.btn-light {
+    border-color: #BFBFBF;
+}
+
+.toolbar-menu {
+    font-size: 12pt !important;
+    font-weight: 700 !important;
+}
+
+.btn-toolbar {
+    font-weight: 700 !important;
+    line-height: 20px;
+}
+
+thead th, tbody tr td:second-child {
+    color: #1b223c;
+    font-weight: 500;
+}
+
+.loader {
+    padding: 30px;
+}
+
+.modal__container_file_content {
+    background-color: #FFF;
+    width: 900px !important;
+    padding: 0px;
+    width: 150px;
+    max-height: 80vh;
+    border-radius: 4px;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.modal__content_file_content, .modal__content_browse_list_agencies, .modal__content_browse_list_issuance {
+    margin-top: 0rem !important;
+    margin-bottom: 0rem !important;
+    line-height: 1.5;
+    color: rgba(0,0,0,.8);
+}
+
+
+.modal__container_browse_list_agencies {
+    padding: 20px;
+}
+
+.d-flex {
+    margin-top: auto;
+    height: 40px;
+}
+
+#uncheck-all-selection {
+    display: none;
+}
+
+.btn-light.disabled, .btn-light:disabled {
+    border-color: #BFBFBF;
+}
+
+.btn-toolbar i {
+    margin-right: 5px;
+}
+
+.modal__container_browse_list_agencies, .modal__container_browse_list_issuance  {
+    max-width: 1000px;
+    overflow-y: hidden;
+}
+
+.list {
+    white-space: normal !important;
+}
+
+.modal-header {
+    display: none;
+} 
+
+.regulatory-reform-tech-report td, .regulatory-map td {
+    border: 1px solid #616161;
+}
+
+.agency_level_ordinance_action {
+    width: 50px;
+}
+
+.nature-list {
+    display: none;
+}
+
+.entry-info {
+    padding: 1em 0em 0em 2em;
+}
+.entry-info p {
+    font-size: 11pt;
+}
+
+.entry-info-label {
+    font-weight: bold;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+}
